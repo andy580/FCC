@@ -1,7 +1,16 @@
-html, body{
+
+
+body{
     font-family:Helvetica, sans-serif;
     max-width:700px;
     margin:auto;
+}
+
+html {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/4/43/Wheat_field_fertilised_with_urine_%284864231908%29.jpg);
+    /* background-repeat:no-repeat; */
+    background-size:cover;
+    background-position-x:center;
 }
 
 
@@ -15,9 +24,7 @@ html, body{
     padding-top:1em;
 }
 
-body {
-    background-color:bisque; 
-}
+
 
 #overview{
     background:blanchedalmond;
@@ -84,14 +91,14 @@ li{
 }
 
 #personal-opinion{
-    background-color:rgba(233, 150, 122, 0.226);
+    background-color:rgba(233, 172, 122, 0.479);
     padding:0.5em 0 0.5em 1em;
     border-radius:50px;
     margin:20px 5px 0px 5px;
 }
 
 #conclusion{
-    background-color:rgba(240, 182, 220, 0.411);
+    background-color:rgba(230, 184, 57, 0.411);
     padding:0.5em 0 0.5em 1em;
     border-radius:50px;
     margin:20px 5px 0px 5px;
