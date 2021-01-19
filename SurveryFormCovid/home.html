@@ -13,10 +13,10 @@
 
     <form id="survey-form">
         <div id="section1">
-            <label for="name-label">Name:</label>
-            <input type="text" id="name-label" name="name" placeholder="Enter name: Last, First">
-            <label for="email-label">Email:</label>
-            <input type="email" id="email-label" name="email" placeholder="Enter email address">
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter name: Last, First" required>
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address" required>
         </div>
 
         <div id="info-consent">
@@ -43,7 +43,7 @@
                 <input id="RPN" type="radio" name="credential" value="RPN">
                 <label for="RPN">Registered Practical Nurse (RPN)</label>
                 <br>
-                <input id="other" type="radio" name="other" value="">Other
+                <input id="other" type="radio" name="credential" value="other">Other
                 <input id="certification" type="text" name="other-credential" placeholder="Enter name of credential">
                 <br>
 
@@ -51,7 +51,8 @@
                 <input id="work-years" type="number" placeholder="Enter a number only" min=0 max=50 required>
                 <br>
                 <p>How many hours do you work weekly?</p>
-                <input id="number-label" type="number" placeholder="Enter a number only" min=0 max=100>
+                <label for="number" id="number-label">Enter number below</label>
+                <input name="number" id="number" type="number" placeholder="Enter a number only" min=0 max=100>
         </div>
 
         <div id="working-conditions">
@@ -60,7 +61,7 @@
             
             <p>How do you feel about your current job?</p>
             <label for="work-happiness">Choose from list:</label>
-            <select id="work-happiness" name="work-happiness">
+            <select id="dropdown" name="work-happiness">
                 <option value="happy">Happy</option>
                 <option value="neutral">Pays the bills</option>
                 <option value="unhappy">Can't wait to get home</option>
@@ -89,7 +90,7 @@
             <p>Is there a real-time camera feed to the patient room?</p>
             <label><input type="radio" id="camera-yes" value="camera-yes" name="camera-feed">Yes</label><br>
             <label><input type="radio" id="camera-no" value="camera-no" name="camera-feed">No</label><br>
-            <label><input type="radio" id="camera-unaware" value="camera-unaware" checked>Unaware</label><br>
+            <label><input type="radio" id="camera-unaware" value="camera-unaware" name="camera-feed" checked>Unaware</label><br>
 
             <p>How much documentation would the patient have to fill out in your care?</p>
             <textarea id="patient-documentation" rows="5" cols="50" placeholder="Write here"></textarea>
@@ -113,7 +114,7 @@
         <div id="submission">
 
             <p> Thank you for completing the form!<br>Click the Please review and hit that submit button when done :)</p>
-            <button type="submit">Submit</button>
+            <button id="submit" type="submit">Submit</button>
         </div>
 
     </form>
