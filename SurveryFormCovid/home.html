@@ -15,21 +15,21 @@
     <form id="survey-form">
         <div id="section1">
             <label id="name-label" for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter name: Last, First" required><br>
+            <input type="text" id="name" name="name" placeholder="Enter name: Last, First" required><br class="textboxes-gap">
             <label id="email-label" for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Enter email address" required>
         </div>
 
         <div id="info-consent">
             <h2>Overview</h2>
-            <p>Only the students & instructor directly involved in this project will see all the information collected in this survey. <br>
-            There are no known signiﬁcant risks if you participate in this survey. Besides information on your designation and experience, if you feel uncomfortable answering a question, skip it. <br>                
-            You may not receive any direct beneﬁt from participating. However, information gathered from this survey will help us to better understand and address issues facing healthcare workers in a pandemic.<br>
+            <p class="muted">Only the students & instructor directly involved in this project will see all the information collected in this survey. <br class="muted">
+            There are no known signiﬁcant risks if you participate in this survey. Besides information on your designation and experience, if you feel uncomfortable answering a question, skip it. <br class="muted">                
+            You may not receive any direct beneﬁt from participating. However, information gathered from this survey will help us to better understand and address issues facing healthcare workers in a pandemic.<br class="muted">
             
             If you have questions, please contact Andy G at ------@uwaterloo.ca</p>
             <!-- Revisit norms for accessibilty -->
-            <p>Terms and Conditions<p><br>
-            <label><input type="radio" id="consent-yes" name="consent" value="yes">Yes</label><br>
+            <strong><p class="toc">Terms and Conditions</p></strong>
+            <label><input type="radio" id="consent-yes" name="consent" value="yes" required>Yes</label><br>
             <label><input type="radio" id=consent-no" name="consent" value="no">No</label>
         </div>
             
@@ -44,8 +44,10 @@
                 <input id="RPN" type="radio" name="credential" value="RPN">
                 <label for="RPN">Registered Practical Nurse (RPN)</label>
                 <br>
-                <input id="other" type="radio" name="credential" value="other">Other
-                <input id="certification" type="text" name="other-credential" placeholder="Enter name of credential">
+                <label> 
+                    <input id="other" type="radio" name="credential" value="other">Other
+                    <input id="certification" type="text" name="other-credential" placeholder="Enter name of credential"> 
+                </label>
                 <br>
 
                 <p>How long have you worked as a Nurse?</p>
@@ -108,13 +110,13 @@
         <div id="contact-info">
             <h2>Contact Info</h2>
             <p>If you answered yes to the last question, please let us know how we can contact you and when.</p>
-            <textarea rows=2 cols=50 placeholder="Please enter one of the following: Email, Social-Media, Cell."></textarea>
+            <textarea rows=2 cols=50 placeholder="Please enter one of the following: Email, Social-Media, Cell."></textarea><br class="textboxes-gap">
             <textarea rows=2 cols=50 placeholder="Please also let us know when would be a good time to contact you as well."></textarea>
         </div>
 
         <div id="submission">
 
-            <p> Thank you for completing the form!<br>Click the Please review and hit that submit button when done :)</p>
+            <p> Thank you for completing the form!<br> Please review and hit that submit button when done :)</p>
             <button id="submit" type="submit">Submit</button>
         </div>
 
@@ -122,7 +124,7 @@
 
 
     <div id="conclusion">
-        <p id=references">This survey was created as a part of SYDE 600. Questions created by Sean S. Website by Andy G.</p>
+        <p class="muted" id=references">This survey was created as a part of SYDE 600. Questions created by Sean S. Website by Andy G.</p>
     </div>
 
 </body>
