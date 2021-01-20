@@ -33,3 +33,13 @@ html{
 h1, h2, h3, label, p{
     color:white;
 }
+
+label{
+    font-size:0.95em;
+}
+
+.question{
+    background:linear-gradient(180deg, rgba(72, 32, 216, 0.493), rgba(105, 69, 236, 0));
+    padding: 10px 0px 10px 0px;
+    border-radius:5px;
+}

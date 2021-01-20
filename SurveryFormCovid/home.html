@@ -36,33 +36,39 @@
         <div id="experience">
                 <!-- In this case I do not wrap input in label thus requiring the use of 'for=id' -->
                 <h2>Designation and Experience</h2>
-                <p>What nursing credential do you possess?</p>
-                
-                <input id="LPN" type="radio" name="credential" value="LPN">
-                <label for="LPN">Licensed Practical Nurse (LPN)</label>
-                <br>
-                <input id="RPN" type="radio" name="credential" value="RPN">
-                <label for="RPN">Registered Practical Nurse (RPN)</label>
-                <br>
-                <label> 
-                    <input id="other" type="radio" name="credential" value="other">Other
-                    <input id="certification" type="text" name="other-credential" placeholder="Enter name of credential"> 
-                </label>
-                <br>
+                <!-- <div class="question"> -->
+                    <p class="question">What nursing credential do you possess?</p>
+                    
+                    <input id="LPN" type="radio" name="credential" value="LPN">
+                    <label for="LPN">Licensed Practical Nurse (LPN)</label>
+                    <br>
+                    <input id="RPN" type="radio" name="credential" value="RPN">
+                    <label for="RPN">Registered Practical Nurse (RPN)</label>
+                    <br>
+                    <label> 
+                        <input id="other" type="radio" name="credential" value="other">Other
+                        <input id="certification" type="text" name="other-credential" placeholder="Enter name of credential"> 
+                    </label>
+                    <br>
+                <!-- </div> -->
 
-                <p>How long have you worked as a Nurse?</p>
-                <input id="work-years" type="number" placeholder="Enter a number only" min=0 max=50 required>
-                <br>
-                <p>How many hours do you work weekly?</p>
-                <label for="number" id="number-label">Enter number below</label>
-                <input name="number" id="number" type="number" placeholder="Enter a number only" min=0 max=100>
+                <!-- <div class="question"> -->
+                    <p class="question">How long have you worked as a Nurse?</p>
+                    <input id="work-years" type="number" placeholder="Enter a number only" min=0 max=50 required>
+                    <br>
+                <!-- </div> -->
+                <!-- <div class="question"> -->
+                    <p class="question">How many hours do you work weekly?</p>
+                    <label for="number" id="number-label">Enter number below</label>
+                    <input name="number" id="number" type="number" placeholder="Enter a number only" min=0 max=100>
+                <!-- </div> -->
         </div>
 
         <div id="working-conditions">
             <h2>Working Conditions</h2>
             <p>If you feel uncomfortable answering a question, please skip it.</p>
             
-            <p>How do you feel about your current job?</p>
+            <p class="question">How do you feel about your current job?</p>
             <label for="work-happiness">Choose from list:</label>
             <select id="dropdown" name="work-happiness">
                 <option value="happy">Happy</option>
@@ -70,7 +76,7 @@
                 <option value="unhappy">Can't wait to get home</option>
             </select>
             <br>
-            <p>What does your work schedule usually look like?<br>Select all that apply:</p>
+            <p class="question">What does your work schedule usually look like?<br>Select all that apply:</p>
             <label><input type="checkbox" id="normal" name="work-hours" value="normal">Standard (8h: 9-5)</label><br>
             <label><input type="checkbox" id="weekday-overtime" name="work-hours" value="weekday-overtime">Weekday overtime</label><br>
             <label><input type="checkbox" id="weekend-overtime" name="work-hours" value="weekend-overtime">Weekend overtime</label><br>
@@ -78,30 +84,30 @@
             <label><input type="checkbox" id="rotating-shifts" name="work-hours" value="rotating-shifts">Rotating shifts</label><br>
             <label><input type="checkbox" id="on-off-shifts" name="on-off-shifts" value="on-off-shifts">On/off shifts</label><br>
 
-            <p>What did your usual day to day work tasks consist of pre-covid?</p>
+            <p class="question">What did your usual day to day work tasks consist of pre-covid?</p>
             <textarea id="pre-covid-response" rows="5" cols="50" placeholder="Write here"></textarea><br>
 
-            <p>What do your day to day tasks look like now?</p>
+            <p class="question">What do your day to day tasks look like now?</p>
             <textarea id="covid-response" rows="5" cols="50" placeholder="Write here"></textarea>
 
-            <p>Which one task exposes you most to the patients?</p>
+            <p class="question">Which one task exposes you most to the patients?</p>
             <label><input type="text" id="covid-task" name="covid-task" placeholder="Write here"></label><br>
 
-            <p>Roughly, how many patients does one nurse attend to?</p>
+            <p class="question">Roughly, how many patients does one nurse attend to?</p>
             <label><input type="number" id="nurse-patient-ratio" name="nurse-patient-ratio" min=1 max=100 placeholder="Enter a number only"></label><br>
 
-            <p>Is there a real-time camera feed to the patient room?</p>
+            <p class="question">Is there a real-time camera feed to the patient room?</p>
             <label><input type="radio" id="camera-yes" value="camera-yes" name="camera-feed">Yes</label><br>
             <label><input type="radio" id="camera-no" value="camera-no" name="camera-feed">No</label><br>
             <label><input type="radio" id="camera-unaware" value="camera-unaware" name="camera-feed" checked>Unaware</label><br>
 
-            <p>How much documentation would the patient have to fill out in your care?</p>
+            <p class="question">How much documentation would the patient have to fill out in your care?</p>
             <textarea id="patient-documentation" rows="5" cols="50" placeholder="Write here"></textarea>
 
-            <p>How much documentation do you have to fill out for the patients in your care?</p>
+            <p class="question">How much documentation do you have to fill out for the patients in your care?</p>
             <textarea id="nurse-documentation" rows="5" cols="50" placeholder="Write here"></textarea>
 
-            <p>Are you comfortable with being contacted again to help further our understanding of the situation?</p>
+            <p class="question">Are you comfortable with being contacted again to help further our understanding of the situation?</p>
             <label><input type="radio" id="interview-response-yes" name="interview-response" value="interview-yes" required>Yes</label>
             <label><input type="radio" id="interview-response-no" name="interview-response" value="interview-no">No</label>
 
