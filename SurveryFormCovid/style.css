@@ -1,0 +1,11 @@
+html{
+    background: url("https://images.fineartamerica.com/images-medium-large-5/female-doctor-in-purple-top-with-stethoscope-science-photo-library.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width:500px;
+    margin:auto;
+    text-align:center;
+}
+
