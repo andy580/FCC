@@ -1,0 +1,65 @@
+header{
+    background-color:bisque;
+    margin:-10px -10px 0px -10px;
+}
+
+#nav-container{
+    display:flex;
+    /* background-color:rgb(80, 255, 173); */
+    flex:1;
+    height:60px;
+}
+
+#nav-container-info{
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:row;
+    /* background-color:darkslateblue; */
+    flex-grow:1;
+    align-items:center;
+}
+
+#nav-container-links{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:right;
+    flex-grow:3;
+    /* background-color:rgb(255, 200, 80); */
+    margin-right:0.5em;
+}
+
+#logo{
+    width:50px;
+    border-radius:1em;
+    align-content:center;
+    margin-left:0.5em;
+    background:linear-gradient(0deg, rgb(228, 120, 77), rgb(238, 198, 123), yellow);
+}
+h2{
+    font-size:0.95em;
+}
+
+.nav-items{
+    font-size:0.95em;
+    padding:0.2em 0.4em 0.1em 0.4em;
+    align-self:flex-end;
+    border-radius:0.4em;
+    margin-right:0.1em;
+}
+
+#company-name{
+    /* background-color:darkolivegreen; */
+    font-family:cursive, Arial, Helvetica, sans-serif;
+    align-self:flex-start;
+    margin-left:0.2em;
+    font-size:2em;
+}
+
+.nav-items{
+    background-color: rgba(255, 166, 0, 0.699);
+}
+
+.nav-items:hover{
+    transform:scale(1.05);
+}
