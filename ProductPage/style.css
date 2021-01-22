@@ -1,13 +1,21 @@
+:root{
+    --navHeight:50px;
+    --footHeight:40px;
+}
+
 header{
     background-color:bisque;
-    margin:-10px -10px 0px -10px;
+    margin:0px -10px 0px -10px;
+    position:fixed;
+    top:0;
+    width:100%;
 }
 
 #nav-container{
     display:flex;
     /* background-color:rgb(80, 255, 173); */
     flex:1;
-    height:60px;
+    height:var(--navHeight);
 }
 
 #nav-container-info{
@@ -29,8 +37,8 @@ header{
     margin-right:0.5em;
 }
 
-#logo{
-    width:50px;
+#header-img{
+    width:40px;
     border-radius:1em;
     align-content:center;
     margin-left:0.5em;
@@ -48,10 +56,12 @@ h2{
     margin-right:0.1em;
 }
 
-#company-name{
+.company-name{
     /* background-color:darkolivegreen; */
     font-family:cursive, Arial, Helvetica, sans-serif;
-    align-self:flex-start;
+    /* align-self:flex-start; */
+    align-items:baseline;
+    /* margin-top:0.3em; */
     margin-left:0.2em;
     font-size:2em;
 }
@@ -62,4 +72,36 @@ h2{
 
 .nav-items:hover{
     transform:scale(1.05);
+}
+
+#how-it-works{
+    margin-top:var(--navHeight);
+}
+
+#footer{
+    /* The following tutorial was used:
+    https://www.youtube.com/watch?v=PwWHL3RyQgk
+    Discusses hwo to create a navbar with flexbox */
+
+    /* height:var(--footHeight); */
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:bisque;
+    height: var(--footHeight);
+}
+
+.social-links, .mandatory{
+    list-style:none;
+}
+
+.social-links li, .mandatory li{
+    display:inline-block;
+    padding: 0px 10px 0px 10px;
+    
 }
