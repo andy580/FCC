@@ -16,16 +16,15 @@ header{
 
 #nav-container{
     display:flex;
-    /* background-color:rgb(80, 255, 173); */
     flex:1;
     height:var(--navHeight);
 }
 
 #nav-container-info{
     display:flex;
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
+    align-content:center;
     flex-direction:row;
-    /* background-color:darkslateblue; */
     flex-grow:1;
     align-items:center;
 }
@@ -36,7 +35,6 @@ header{
     flex-direction:row;
     justify-content:right;
     flex-grow:3;
-    /* background-color:rgb(255, 200, 80); */
     margin-right:0.5em;
 }
 
@@ -51,7 +49,7 @@ h2{
     font-size:0.95em;
 }
 
-.nav-link{
+#nav-how, #nav-price, #nav-contact{
     font-size:0.95em;
     padding:0.2em 0.4em 0.1em 0.4em;
     align-self:flex-end;
@@ -64,11 +62,8 @@ h2{
 }
 
 .company-name{
-    /* background-color:darkolivegreen; */
     font-family:cursive, Arial, Helvetica, sans-serif;
-    /* align-self:flex-start; */
     align-items:baseline;
-    /* margin-top:0.3em; */
     margin-left:0.2em;
     font-size:2em;
 }
@@ -92,6 +87,7 @@ h2{
     align-items:center;
     background-color:bisque;
     height: var(--footHeight);
+    padding-top:10px;
 }
 
 .social-links, .mandatory{
@@ -139,4 +135,18 @@ form{
 
 #free-price ul, #premium-price ul{
     text-align:left;
+}
+
+@media (max-width:500px) {
+    #pricing{
+        flex-wrap:wrap;
+        
+    }
+    #pricing div{
+        margin: 10px 0px;
+    }
+    #steps{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
 }
