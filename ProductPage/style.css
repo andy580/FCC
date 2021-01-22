@@ -1,6 +1,8 @@
 :root{
     --navHeight:50px;
     --footHeight:40px;
+
+    text-align:center;
 }
 
 header{
@@ -48,12 +50,16 @@ h2{
     font-size:0.95em;
 }
 
-.nav-items{
+.nav-link{
     font-size:0.95em;
     padding:0.2em 0.4em 0.1em 0.4em;
     align-self:flex-end;
     border-radius:0.4em;
     margin-right:0.1em;
+    background-color: rgba(255, 166, 0, 0.699);
+}
+.nav-link:hover{
+    transform:scale(1.05);
 }
 
 .company-name{
@@ -66,16 +72,8 @@ h2{
     font-size:2em;
 }
 
-.nav-items{
-    background-color: rgba(255, 166, 0, 0.699);
-}
-
-.nav-items:hover{
-    transform:scale(1.05);
-}
-
 #how-it-works{
-    margin-top:var(--navHeight);
+    margin-top:65px;
 }
 
 #footer{
@@ -83,7 +81,6 @@ h2{
     https://www.youtube.com/watch?v=PwWHL3RyQgk
     Discusses hwo to create a navbar with flexbox */
 
-    /* height:var(--footHeight); */
     position:fixed;
     bottom:0px;
     left:0px;
@@ -103,5 +100,23 @@ h2{
 .social-links li, .mandatory li{
     display:inline-block;
     padding: 0px 10px 0px 10px;
-    
+}
+
+#steps{
+    display:flex;
+    justify-content:space-between;
+    list-style:none;
+    padding-left:0;
+}
+
+#steps li{
+    width:150px;
+}
+
+.step-icons{
+    height:100px;
+}
+
+form{
+    padding-bottom:50px;
 }
