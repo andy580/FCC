@@ -11,6 +11,7 @@ header{
     position:fixed;
     top:0;
     width:100%;
+    z-index:9999;
 }
 
 #nav-container{
@@ -115,8 +116,27 @@ h2{
 
 .step-icons{
     height:100px;
+    filter: grayscale(1.0);
 }
 
 form{
     padding-bottom:50px;
+}
+
+#pricing{
+    display:flex;
+    justify-content:center;
+}
+#pricing div{
+    margin: 0px 10px;
+}
+
+#free-price, #premium-price{
+    width:200px;
+    border-style:solid;
+    border-radius:2em;
+}
+
+#free-price ul, #premium-price ul{
+    text-align:left;
 }
