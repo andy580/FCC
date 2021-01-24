@@ -1,0 +1,23 @@
+.project-tile{
+    background-color:bisque;
+}
+
+nav{
+    background-color:rgb(168, 168, 255);
+}
+
+footer{
+    background-color:green;
+}
+
+#welcome-section{
+    background-color:cadetblue;
+}
+
+#projects{
+    background-color:darkgoldenrod;
+}
+
+img{
+    width:200px;
+}
