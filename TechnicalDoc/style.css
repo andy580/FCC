@@ -33,3 +33,16 @@ main{
     background-color:darkgray;
     grid-area:2/1/2/2;
 }
+
+@media (max-width:375px){
+    body{
+        overflow:visible;
+    }
+    #web-body{
+        grid-template-columns:1fr;
+        overflow:visible;
+    }
+    #top-disclosure{
+        background-color:red;
+    }
+}
