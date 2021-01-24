@@ -6,6 +6,79 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>The following information is copied from: https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/overview</header><br>
+    <h1>Technical Documentation for Computer Vision</h1>
+
+    <main id="main-doc">
+        <section class="main-section" id="Computer_Vision_(CV)">
+            <header>Computer Vision (CV)</header>
+            <p>Azure's Computer Vision service gives you access to advanced algorithms that process images and return information based on the visual features you're interested in. For example, Computer Vision can determine whether an image contains adult content, find specific brands or objects, or find human faces.</p>
+
+            <p>You can create Computer Vision applications through a client library SDK or by calling the REST API directly. This page broadly covers what you can do with Computer Vision.</p>
+
+            <p>From personal experience, OpenCV is a great starting point for CV applications.</p>
+            
+            <p>To get started simply type the following into your Linux Terminal</p>
+
+            <code>sudo apt install python3-opencv</code>
+
+            <p>Then, open up your favorite python IDE and get started by typing:</p>
+
+            <code>import cv2</code>
+        </section>
+
+        <section class="main-section" id="Optical_Character_Recognition">
+            <header>Optical Character Recognition</header>
+            <p>Computer Vision includes Optical Character Recognition (OCR) capabilities. You can use the new Read API to extract printed and handwritten text from images and documents. It uses the latest models and works with text on a variety of surfaces and backgrounds. These include receipts, posters, business cards, letters, and whiteboards. The two OCR APIs support extracting printed text in several languages. Follow a quickstart to get started.</p>
+
+            <p>One good resource that can be used is Tesseract-ocv which can be installed on Linux simply by typing the following into your terminal.</p>
+            <code>sudo apt install tesseract-ocr</code>
+
+            <p>Then, open up your favorite python IDE and get started by typing:</p>
+
+            <code>import pytesseract</code>
+
+            <p>There will be some pre-processing steps required where one could use techniques like Otsu-thresholding. This can be imported from the skimage library</p>
+            <code> import skimage <br>from skimage.filter import threshold_otsu</code>
+            
+
+        </section>
+
+
+        <section class="main-section" id="Get_Area_of_Interest">
+            <header>Get Area of Interest</header>
+            <p>Analyze the contents of an image to return the coordinates of the area of interest. Instead of cropping the image and generating a thumbnail, Computer Vision returns the bounding box coordinates of the region, so the calling application can modify the original image as desired. </p>
+        </section>
+
+        <section class="main-section" id="Deploy_Using_Docker_Containers">
+            <header>Deploy Using Docker Containers</header>
+            <p>Use Computer Vision containers to deploy API features on-premises. These Docker containers enable you to bring the service closer to your data for compliance, security or other operational reasons. Computer Vision offers the following containers:</p>
+            <ul>
+                <li>The Computer Vision read OCR container (preview) lets you recognize printed and handwritten text in images.</li>
+                <li>The Computer Vision spatial analysis container (preview) lets you to analyze real-time streaming video to understand spatial relationships between people and their movement through physical environments.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Image_Requirements">
+            <header>Image Requirements</header>
+            <p>Computer Vision can analyze images that meet the following requirements:</p>
+            <ul>
+                <li>The image must be presented in JPEG, PNG, GIF, or BMP format</li>
+                <li>The file size of the image must be less than 4 megabytes (MB)</li>
+                <li>The dimensions of the image must be greater than 50 x 50 pixels </li>
+                <ul>
+                    <li>For the Read API, the dimensions of the image must be between 50 x 50 and 10000 x 10000 pixels.</li>
+                </ul>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Next_Steps">
+            <header>Next Steps</header>
+            <p>Get started with Computer Vision by following the quickstart guide in your preferred development language:</p>
+            <ul>
+                <li><a target=_blank href="https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/quickstarts-sdk/client-library">Quickstart: Computer Vision REST API or client libraries</a></li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
