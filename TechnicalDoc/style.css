@@ -5,44 +5,90 @@ body{
 /* Code for scrolling in grid was obtained from: 
 https://medium.com/@beyondborders/beginner-css-grid-sticky-navigation-scrolling-content-7c4de0a8d1dc */
 
+header{
+    padding-top:10px;
+    text-align:center;
+    font-weight:bold;
+}
+
 #container{
     display:grid;
     height:100vh;
-    width:100vw;
     grid-template-columns:1fr;
-    grid-template-rows:100px 100px 1fr;
+    grid-template-rows:auto auto 1fr;
 }
 
 #web-body{
     display:grid;
     grid-template-columns:1fr 2fr;
     overflow:hidden;
+    margin:0 0 0 0px;
 }
 nav{
-    background-color:bisque;    
+    background-color:#0F5298; 
+    color:white;
+    padding:10px;  
+    font-weight:bold; 
 }
-main{
-    background-color:burlywood;
-    overflow-y:scroll;
-}
-#top-disclosure{
-    background-color:cadetblue;
-    grid-area:1/1/2/2;
-}
-#title{
-    background-color:darkgray;
-    grid-area:2/1/2/2;
+nav li{
+    list-style-position:inside;
+    padding:10px 0px;
+    padding-left:0px;
 }
 
-@media (max-width:375px){
+a:link, a:visited{
+    color:#D5F3FE;
+    font-style:bold;
+    font-weight:100;
+    text-decoration:none;
+}
+nav li:hover{
+    list-style:none;
+    border-style:solid;
+    border-radius:20px;
+    text-align:center;
+    padding:5px;
+    border-width:2px;
+}
+
+main{
+    background-color:#D5F3FE;
+    overflow-y:scroll;
+    padding-left:10px;
+}
+#top-disclosure{
+    background-color:#66D3FA;
+    grid-area:1/1/2/2;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:small;
+    font-style:italic;
+    color:rgb(48, 48, 48);
+    text-align:center;
+    padding:10px;
+    justify-content:center;
+    font-weight:100 !important;
+}
+#title{
+    background-color:#3C99DC;
+    grid-area:2/1/2/2;
+    margin:0 0 0 0px;
+    font-size:larger;
+    padding:10 0px;
+    color:rgb(231, 231, 231);
+    text-align:center;
+}
+
+#ms-link{
+    color:blue;
+    font-style:italic;
+}
+
+@media (max-width:400px){
     body{
         overflow:visible;
     }
     #web-body{
         grid-template-columns:1fr;
         overflow:visible;
-    }
-    #top-disclosure{
-        background-color:red;
     }
 }
