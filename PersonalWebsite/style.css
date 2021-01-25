@@ -13,6 +13,7 @@ nav{
     width:100%;
     height:var(--nav-height);
     display:flex;    
+    z-index:9999;
 }
 
 #logo{
@@ -58,8 +59,30 @@ nav ul a:visited, nav ul a:link{
 }
 
 #welcome-section{
-    background-color:cadetblue;
+    background-image: url("https://scontent.fybz2-2.fna.fbcdn.net/v/t1.0-9/30741680_10156095044521469_4718921370304512000_n.jpg?_nc_cat=102&ccb=2&_nc_sid=e3f864&_nc_ohc=MhWOgJxm39YAX-novVH&_nc_oc=AQntH6BKUo-9ys3Bqg0DeGNAOybRLBx794D--RdNWibBfk7IJlBKx5j-as_YVao0V84&_nc_ht=scontent.fybz2-2.fna&oh=9f7bf687b105618ee66c917fb7e973f3&oe=60354854");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-x:50%;
     padding-top:var(--nav-height);
+    text-align:center;
+}
+
+#welcome-message{
+    color:rgb(255, 255, 255);
+    margin-top:0px;
+}
+
+#personal-pic{
+    width:300px;
+    border-radius:50%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:175px;
+    position:relative;
+    border-style:solid;
+    border-color:white;
+    border-width:2px;
 }
 
 footer{
@@ -77,10 +100,6 @@ footer{
 
 .project-tile{
     background-color:bisque;
-}
-
-#welcome-section img{
-    width:200px;
 }
 
 .project-tile img{
