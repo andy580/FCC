@@ -65,11 +65,13 @@ nav ul a:visited, nav ul a:link{
     background-position-x:50%;
     padding-top:var(--nav-height);
     text-align:center;
+    overflow:hidden;
 }
 
 #welcome-message{
     color:rgb(255, 255, 255);
     margin-top:0px;
+    text-shadow: 0 0 3px darkgray, 0 0 3px darkgray, 0 0 3px darkgray, 0 0 3px darkgray;
 }
 
 #personal-pic{
@@ -95,14 +97,54 @@ footer{
 }
 
 #projects{
-    background-color:darkgoldenrod;
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows:25px auto auto;
+    grid-template-areas:"Z Z Z Z Z Z" "A A B B C C" "D D D E E E";
+    background-color:black;
+    column-gap:auto;
+    text-align:center;
+}
+
+#projects header{
+    text-align:center;
+    color:white;
+    grid-area:Z;
+    align-self:center;
+    font-style:italic;
+}
+#personal-tile{
+    grid-area:A;
+}
+#CV-doc-tile{
+    grid-area:B;
+}
+#product-tile{
+    grid-area:C;
+}
+#survey-tile{
+    grid-area:D;
+}
+#tribute-tile{
+    grid-area:E;
+}
+#tribute-tile img{
+    border-radius:50%;
 }
 
 .project-tile{
     background-color:bisque;
+    border-style:solid;
+    border-color:white;
+    border-radius:40px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    margin:10px;
 }
 
 .project-tile img{
+    height:100px;
     width:100px;
 }
 
