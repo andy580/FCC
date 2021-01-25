@@ -56,13 +56,15 @@ nav ul li, footer ul li {
     border-radius:0.5em;
     border-width:2px;
     padding:0px 5px;
+    margin:0;
+    list-style-type:none;
+    list-style-position:none;
+
 }
 nav ul a:visited, nav ul a:link, footer ul a:visited, footer ul a:link{
     color:white;
     text-decoration:none;
 }
-
-
 
 #grid-container{
     display:grid;
@@ -111,7 +113,7 @@ nav ul a:visited, nav ul a:link, footer ul a:visited, footer ul a:link{
 #projects{
     display:grid;
     grid-template-columns:repeat(6, 1fr);
-    grid-template-rows:25px auto auto;
+    grid-template-rows:40px, repeat(5,auto);
     grid-template-areas:"Z Z Z Z Z Z" "A A B B C C" "D D D E E E";
     background-color:black;
     column-gap:auto;
@@ -160,3 +162,37 @@ nav ul a:visited, nav ul a:link, footer ul a:visited, footer ul a:link{
     width:100px;
 }
 
+@media (max-width:550px){
+    :root{
+        --nav-height:150;
+    }
+    nav, footer{
+        flex-wrap:wrap;
+        justify-content:center;
+        padding-bottom:10px;
+    }
+    #logo, #logo p, #logo img{
+        padding-bottom:10px;
+        flex-wrap:wrap;
+        flex-direction:column;
+        align-content:center;
+    }
+    #navbar{
+        
+        flex-wrap:wrap;
+    }
+    #professional-pic{
+        height:100px;
+    }
+    #projects{
+        display:flex;
+        flex-direction:column;        
+    }
+    
+    footer ul, nav ul{
+        list-style-type:none;
+        list-style-position:inside;
+        margin:0;
+        padding-left:0;
+    }
+}
