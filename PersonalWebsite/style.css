@@ -16,6 +16,15 @@ nav{
     z-index:9999;
 }
 
+footer{
+    background-color:black;
+    color:white;
+    width:100%;
+    height:var(--nav-height);
+    display:flex;  
+    padding:10px;
+}
+
 #logo{
     display:flex;
 }
@@ -28,7 +37,7 @@ nav{
     border-radius:50%;
 }
 
-nav ul{
+nav ul, footer ul{
     margin-bottom: 5px;
     list-style:none; 
     flex:auto;
@@ -36,17 +45,24 @@ nav ul{
     display:flex;
     justify-content:space-evenly;
 }
-nav ul li {
+
+footer ul{
+    margin-bottom:10px;
+}
+
+nav ul li, footer ul li {
     display: inline;
     border-style:solid;
     border-radius:0.5em;
     border-width:2px;
     padding:0px 5px;
 }
-nav ul a:visited, nav ul a:link{
+nav ul a:visited, nav ul a:link, footer ul a:visited, footer ul a:link{
     color:white;
     text-decoration:none;
 }
+
+
 
 #grid-container{
     display:grid;
@@ -85,10 +101,6 @@ nav ul a:visited, nav ul a:link{
     border-style:solid;
     border-color:white;
     border-width:2px;
-}
-
-footer{
-    background-color:green;
 }
 
 #nav-wrapper{
